@@ -1,7 +1,12 @@
 @import "vars.css";
 @import "react-burger-menu.css";
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html {
+  box-sizing: border-box;
   height: 100%;
   font-size: 75%;
   font-family: sans-serif;
@@ -52,6 +57,7 @@ body {
 .adj-page-heading {
   text-align: center;
   text-transform: uppercase;
+  font-family: var(--font-family-display);
 }
 
 .adj-page {
@@ -78,12 +84,13 @@ body {
   padding: .5rem 1rem .5rem 3.5rem;
 }
 
-.adj-header-logo-link {
+.adj-header-logo-box {
   float: left;
   height: 3rem;
 }
 
 .adj-header-logo {
+  display: block;
   height: 3rem;
   width: auto;
 }
@@ -92,7 +99,9 @@ body {
   float: left;
   padding: 1rem;
   font-size: 1rem;
+  line-height: 1rem;
   text-transform: uppercase;
+  font-family: var(--font-family-display);
 }
 
 
@@ -102,7 +111,7 @@ body {
 
 .adj-hero-name {
   text-transform: uppercase;
-  font-family: Oswald, sans-serif;
+  font-family: var(--font-family-display);
 }
 
 .adj-hero-logo {
@@ -139,7 +148,7 @@ body {
   /*background: transparent;*/
   text-transform: uppercase;
   /*font-weight: bold;*/
-  font-family: Oswald, sans-serif;
+  font-family: var(--font-family-display);
 
   &:hover {
     background: rgba(255,255,255,.6);
