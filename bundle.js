@@ -29928,7 +29928,6 @@
 	  },
 	  render: function render() {
 	    var post = this.props.route.page.data;
-	    console.log('route', this.props.route);
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'markdown' },
