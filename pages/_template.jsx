@@ -18,10 +18,16 @@ module.exports = React.createClass({
     }
   },
   render () {
+    var ratio
 
-    var ratio = {
-      x: this.state.clientX / window.innerWidth,
-      y: this.state.clientY / window.innerHeight,
+    try {
+      ratio = {
+        x: this.state.clientX / window.innerWidth,
+        y: this.state.clientY / window.innerHeight,
+      }
+    }
+    catch (e) {
+      ratio = { x: 0, y: 0 }
     }
     var percent = {
       x: ratio.x * 100,
