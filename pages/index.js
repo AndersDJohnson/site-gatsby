@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
+import { Icon } from 'react-fa'
 
 import './css/index.css'
 
@@ -19,11 +20,11 @@ export default class Index extends React.Component {
 
           <nav>
             <Link to={prefixLink('/resume/')} className="adj-btn adj-btn-lg adj-btn-home">
-              Resume
+              <Icon name="briefcase" /> Resume
             </Link>
 
             <Link to={prefixLink('/work/')} className="adj-btn adj-btn-lg adj-btn-home">
-              Work
+              <Icon name="book" /> Work
             </Link>
 
             {/*<Link to={prefixLink('/blog/')} className="adj-btn adj-btn-lg adj-btn-home">

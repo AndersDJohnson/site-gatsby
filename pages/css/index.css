@@ -34,6 +34,20 @@ body {
   text-decoration: inherit;
 }
 
+.adj-list-unstyled {
+  padding: 0;
+  list-style: none;
+}
+
+
+.adj-menu-item {
+  padding: .25em 0;
+}
+
+.adj-menu-item-icon {
+  width: 1.5em;
+}
+
 
 .adj-page-heading {
   text-align: center;
@@ -102,7 +116,7 @@ body {
   background: white;
   border: none;
   text-decoration: none;
-  transition: background 500ms;
+  transition: background 250ms;
 
   font-size: 1rem;
   line-height: 1rem;

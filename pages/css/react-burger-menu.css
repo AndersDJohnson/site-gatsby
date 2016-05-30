@@ -22,7 +22,7 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: white;
 }
 
 /* General sidebar styles */
@@ -39,7 +39,7 @@
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
+  color: white;
   padding: 0.8em;
 }
 
