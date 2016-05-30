@@ -42029,7 +42029,7 @@
 	        { className: 'adj-header adj-clearfix' },
 	        _react2.default.createElement(
 	          _reactRouter.Link,
-	          { to: '/', className: 'adj-link-unstyled' },
+	          { to: (0, _gatsbyHelpers.prefixLink)('/'), className: 'adj-link-unstyled' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'adj-header-logo-link' },
