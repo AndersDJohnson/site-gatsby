@@ -2,8 +2,16 @@ import React from 'react'
 import Markdown from 'react-remarkable'
 import ReactMarkdown from 'react-markdown'
 import stripIndent from 'strip-indent'
+// import AnchorJS from 'anchor-js'
 
 export default class Resume extends React.Component {
+
+  componentDidMount () {
+    // Waiting on support for anchor links in Gatsby
+    // @see https://github.com/gatsbyjs/gatsby/issues/302
+    // AnchorJS.anchors.add()
+  }
+
   render () {
     return (
       <div>
