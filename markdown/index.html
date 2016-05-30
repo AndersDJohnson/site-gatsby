@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0"/><title></title><link rel="shortcut icon"/><link rel="stylesheet" href="/styles.css"/></head><body class="adj adj-background"><div id="react-mount"><div data-reactroot="" data-reactid="1" data-react-checksum="67229813"><div class="adj-mouse-bg" style="position:fixed;left:0;top:0;right:0;bottom:0;background:radial-gradient(2000px at 0% 0%,rgba(0,0,0,0), rgba(20,0,20,0.8)), linear-gradient(to left, rgb(50,110,150), rgb(60,190,150));" data-reactid="2"></div><div style="position:relative;" data-reactid="3"><div class="adj-header adj-clearfix" data-reactid="4"><a class="adj-link-unstyled" href="/" data-reactid="5"><div class="adj-header-logo-link" data-reactid="6"><img src="/images/logo.svg" class="adj-header-logo" data-reactid="7"/></div><div class="adj-header-name" data-reactid="8">Anders D. Johnson</div></a><br data-reactid="9"/><div class="adj-cursor" style="position:absolute;left:0;top:0;" data-reactid="10"></div></div><div class="markdown" data-reactid="11"><h1 data-reactid="12">I&#x27;m a markdown file!</h1><div data-reactid="13"><p>Markdown is pretty cool, if you ask me!</p>
+<h2>You can have lists</h2>
+<h3>Numbered</h3>
+<ol>
+<li>me first!</li>
+<li>I’m second!</li>
+<li>third :(</li>
+</ol>
+<h3>Unordered</h3>
+<ul>
+<li>Cheese</li>
+<li>is actually</li>
+<li>really good</li>
+</ul>
+<p>And <strong>lots</strong> of other <em>fun</em> stuff.</p>
+<blockquote>
+<p>Block quotes are
+written like so.</p>
+<p>They can span multiple paragraphs,
+if you like.</p>
+</blockquote>
+<h2>Enable additional syntax with Markdown-it plugins</h2>
+<p>You can add additional Markdown-it plugins with
+<a href="https://github.com/gatsbyjs/gatsby-starter-default/blob/master/loaders/markdown-loader/index.js#L22-L32">a custom markdown loader</a>.</p>
+<h3>Subscript</h3>
+<p>H<sub>2</sub>0</p>
+<h3>Footnote</h3>
+<p>Here is an inline note.<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<h3>Definition lists</h3>
+<dl>
+<dt>Term 1</dt>
+<dd>
+<p>Definition 1</p>
+</dd>
+<dt>Term 2 with <em>inline markup</em></dt>
+<dd>
+<p>Definition 2</p>
+<pre><code>  { some code, part of Definition 2 }
+</code></pre>
+<p>Third paragraph of definition 2.</p>
+</dd>
+</dl>
+<h3>Abbriviation</h3>
+<p>The <abbr title="Hyper Text Markup Language">HTML</abbr> specification
+is maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+<h3>Add a class or other attributes to content.</h3>
+<p class="warning">here be dragons</p>
+<h2>Some code</h2>
+<p>Javascript</p>
+<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">$initHighlight</span>(<span class="hljs-params">block, flags</span>) </span>{
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">if</span> (block.className.search(<span class="hljs-regexp">/\bno\-highlight\b/</span>) != <span class="hljs-number">-1</span>)
+      <span class="hljs-keyword">return</span> processBlock(block, <span class="hljs-literal">true</span>, <span class="hljs-number">0x0F</span>) + <span class="hljs-string">' class=""'</span>;
+  } <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-comment">/* handle exception */</span>
+  }
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span> / <span class="hljs-number">2</span>; i &lt; classes.length; i++) { <span class="hljs-comment">// "0 / 2" should not be parsed as regexp</span>
+    <span class="hljs-keyword">if</span> (checkCondition(classes[i]) === <span class="hljs-literal">undefined</span>)
+      <span class="hljs-keyword">return</span> <span class="hljs-regexp">/\d+/g</span>;
+  }
+}
+</code></pre>
+<p>Python</p>
+<pre><code class="language-python"><span class="hljs-keyword">import</span> time
+<span class="hljs-comment"># Quick, count to ten!</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>):
+    <span class="hljs-comment"># (but not *too* quick)</span>
+    time.sleep(<span class="hljs-number">0.5</span>)
+    <span class="hljs-keyword">print</span> i
+</code></pre>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1"  class="footnote-item"><p>Inlines notes are easier to write, since
+you don't have to pick an identifier and move down to type the
+note. <a href="#fnref1" class="footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>
+</div></div></div></div></div><script src="/bundle.js"></script></body></html>
