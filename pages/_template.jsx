@@ -70,7 +70,7 @@ module.exports = React.createClass({
       header = (
         <div className="adj-header adj-clearfix">
 
-          <Link to="/" className="adj-link-unstyled">
+          <Link to={prefixLink('/')} className="adj-link-unstyled">
             <div className="adj-header-logo-link">
               <img src={prefixLink('/images/logo.svg')} className="adj-header-logo" />
             </div>
