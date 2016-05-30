@@ -1,8 +1,11 @@
+@import "react-burger-menu.css";
+
 :root {
-  --color: rgba(255,255,255,0.75);
+  --color: rgba(255,255,255,.75);
 }
 
 html {
+  height: 100%;
   font-size: 75%;
   font-family: sans-serif;
 }
@@ -14,6 +17,7 @@ html {
 }
 
 body {
+  height: 100%;
   margin: 0;
 }
 
@@ -40,10 +44,10 @@ body {
 }
 
 .adj-page {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, .6);
   color: #444;
 
-  padding: 0.5rem 1rem;
+  padding: .5rem 1rem;
 }
 
 .adj-background {
@@ -60,7 +64,7 @@ body {
 }
 
 .adj-header {
-  padding: 0.5em 1em;
+  padding: .5rem 1rem .5rem 3.5rem;
 }
 
 .adj-header-logo-link {
@@ -107,8 +111,8 @@ body {
   line-height: 1rem;
   height: 1rem;
 
-  padding: 0.25rem 0.5rem;
-  margin: 0.25rem;
+  padding: .25rem .5rem;
+  margin: .25rem;
 }
 
 .adj-btn-lg {
@@ -119,13 +123,13 @@ body {
 
 .adj-btn-home {
   color: var(--color);
-  background: rgba(255,255,255,0.2);
+  background: rgba(255,255,255,.2);
   /*background: transparent;*/
   text-transform: uppercase;
   /*font-weight: bold;*/
 
   &:hover {
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,.6);
   }
 }
 

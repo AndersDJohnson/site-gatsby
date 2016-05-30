@@ -7,7 +7,7 @@ import './css/index.css'
 export default class Index extends React.Component {
   render () {
     return (
-      <div>
+      <div id="outer-container">
 
         <div className="adj-center adj-hero">
 
@@ -26,9 +26,9 @@ export default class Index extends React.Component {
               Work
             </Link>
 
-            <Link to={prefixLink('/blog/')} className="adj-btn adj-btn-lg adj-btn-home">
+            {/*<Link to={prefixLink('/blog/')} className="adj-btn adj-btn-lg adj-btn-home">
               Blog
-            </Link>
+            </Link>*/}
           </nav>
 
           <p>

@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
 import _ from 'lodash'
+import { push as Menu } from 'react-burger-menu'
 
 module.exports = React.createClass({
   propTypes () {
@@ -47,24 +48,33 @@ module.exports = React.createClass({
       bottom: 0,
       // background: 'gradient(radial, rgba(0,0,0,1), rgba(0,0,0,0))',
       // background: 'transparent',
-      background: 'radial-gradient(' + size + ' at ' + percent.x + '% ' + percent.y + '%,' +
+      background: [
+        'radial-gradient(',
+        size + ' at ' + percent.x + '% ' + percent.y + '%,',
+        'rgba(0,0,0,0), rgba(0,0,0,1))',
+        ',',
+        'linear-gradient(to left, rgb(50,110,150), rgb(60,190,150))',
+        // 'purple'
+      ].join('')
+
         // 'rgba(255,255,200,0.5), rgba(255,255,200,0)), ' +
         // 'rgba(0,0,0,0), rgba(0,0,0,0.5)), ' +
         // 'rgba(0,0,0,0), rgba(50,0,50,1)), ' +
-        'rgba(0,0,0,0), rgba(20,0,20,0.8)), ' +
         // 'linear-gradient(to left, #220022 , #53346D)',
         // 'linear-gradient(to left, #F0C27B , #4B1248)',
         // 'linear-gradient(to left, rgb(30,80,90), rgb(60,190,150))',
-        'linear-gradient(to left, rgb(50,110,150), rgb(60,190,150))',
         // 'linear-gradient(to left, #24C6DC , #514A9D)',
+        // 'linear-gradient(to left, rgb(50,110,150), rgb(60,190,150))',
     }
 
     var header
     var route = _.last(this.props.routes)
     var path = route.path
-    console.log('path', path)
+    // console.log('path', path)
     if (!path || path == '/') {
-      header = null
+      header = (
+        null
+      )
     }
     else {
       header = (
@@ -104,44 +114,51 @@ module.exports = React.createClass({
     }
 
     return (
-      // <div>
       <div>
+        <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+          <div>OK</div>
+        </Menu>
 
         <div className="adj-mouse-bg" style={mouseStyles}></div>
 
-        <div style={{position: 'relative'}}>
+        <div id="page-wrap">
 
-          {/*<Container
-            style={{
-              maxWidth: 960,
-              // padding: `${rhythm(1)} ${rhythm(1/2)}`,
-              // padding: '1em 0.5em',
-              paddingTop: 0,
-            }}
-          >*/}
+          <div style={{position: 'relative'}}>
 
-            {header}
+            {/*<Container
+              style={{
+                maxWidth: 960,
+                // padding: `${rhythm(1)} ${rhythm(1/2)}`,
+                // padding: '1em 0.5em',
+                paddingTop: 0,
+              }}
+            >*/}
 
-            {this.props.children}
+              {header}
 
-          {/*</Container>*/}
+              <div>
+                {this.props.children}
+              </div>
 
+            {/*</Container>*/}
+
+          </div>
         </div>
       </div>
     )
   },
   onMouseMove(e) {
-    console.log(e)
+    // console.log(e)
     this.setState({
       clientX: e.clientX,
       clientY: e.clientY,
     })
   },
   componentDidMount() {
-    console.log('template mount')
+    // console.log('template mount')
     document.addEventListener('mousemove', this.onMouseMove)
   },
   componentDidUpdate(props, state) {
-    console.log('template update')
+    // console.log('template update')
   },
 })
