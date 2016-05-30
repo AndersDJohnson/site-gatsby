@@ -4,7 +4,9 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
 import _ from 'lodash'
-import { push as Menu } from 'react-burger-menu'
+// import { push as Menu } from 'react-burger-menu'
+import { slide as Menu } from 'react-burger-menu'
+import MenuContent from '../components/MenuContent'
 
 module.exports = React.createClass({
   propTypes () {
@@ -12,11 +14,17 @@ module.exports = React.createClass({
       children: React.PropTypes.any,
     }
   },
-  getInitialState() {
+  getInitialState () {
     return {
       clientX: 0,
-      clientY: 0
+      clientY: 0,
     }
+  },
+  onMenuLinkClick () {
+    this.setState({menuIsOpen: false})
+  },
+  onMenuStateChange (state) {
+    this.setState({menuIsOpen: state.isOpen})
   },
   render () {
     var ratio
@@ -70,7 +78,6 @@ module.exports = React.createClass({
     var header
     var route = _.last(this.props.routes)
     var path = route.path
-    // console.log('path', path)
     if (!path || path == '/') {
       header = (
         null
@@ -115,8 +122,11 @@ module.exports = React.createClass({
 
     return (
       <div>
-        <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
-          <div>OK</div>
+        <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }
+          isOpen={ this.state.menuIsOpen }
+          onStateChange={ this.onMenuStateChange }
+        >
+          <MenuContent onLinkClick={this.onMenuLinkClick} />
         </Menu>
 
         <div className="adj-mouse-bg" style={mouseStyles}></div>
@@ -147,18 +157,15 @@ module.exports = React.createClass({
       </div>
     )
   },
-  onMouseMove(e) {
-    // console.log(e)
+  onMouseMove (e) {
     this.setState({
       clientX: e.clientX,
       clientY: e.clientY,
     })
   },
-  componentDidMount() {
-    // console.log('template mount')
+  componentDidMount () {
     document.addEventListener('mousemove', this.onMouseMove)
   },
-  componentDidUpdate(props, state) {
-    // console.log('template update')
+  componentDidUpdate (props, state) {
   },
 })
