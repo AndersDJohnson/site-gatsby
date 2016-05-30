@@ -29553,8 +29553,8 @@
 
 	module.exports = {
 		"config": {
-			"siteTitle": "Gatsby Starter Site",
-			"linkPrefix": "/gatsby-starter-default"
+			"siteTitle": "Anders D. Johnson",
+			"linkPrefix": "/site-gatsby"
 		},
 		"relativePath": "",
 		"pages": [
