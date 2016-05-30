@@ -9,7 +9,6 @@ module.exports = React.createClass({
   },
   render () {
     const post = this.props.route.page.data
-    console.log('route', this.props.route)
     return (
       <div className="markdown">
         <h1>{post.title}</h1>
