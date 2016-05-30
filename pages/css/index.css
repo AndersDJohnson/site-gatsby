@@ -153,6 +153,9 @@ body {
   font-size: 1.5rem;
   line-height: 1.5rem;
   /*height: 1.5rem;*/
+
+  padding: .5rem 1rem;
+  margin: .5rem;
 }
 
 .adj-btn-home {
