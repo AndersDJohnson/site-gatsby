@@ -24,7 +24,7 @@ export default class Index extends React.Component {
             </Link>
 
             <Link to={prefixLink('/work/')} className="adj-btn adj-btn-lg adj-btn-home">
-              <Icon name="book" /> Work
+              <Icon name="desktop" /> Work
             </Link>
 
             {/*<Link to={prefixLink('/blog/')} className="adj-btn adj-btn-lg adj-btn-home">

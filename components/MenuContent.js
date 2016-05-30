@@ -20,7 +20,7 @@ export default class MenuContent extends React.Component {
       {
         url: '/work/',
         name: 'Work',
-        icon: 'book',
+        icon: 'desktop',
       },
     ]
 
