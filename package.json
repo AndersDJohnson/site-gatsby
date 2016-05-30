@@ -22,8 +22,11 @@
     "object-assign": "^4.0.1",
     "react-document-title": "^2.0.1",
     "react-headroom": "^1.8.2",
+    "react-markdown": "^2.2.0",
+    "react-remarkable": "^1.1.1",
     "react-responsive-grid": "^0.3.3",
     "react-router": "^2.2.4",
+    "strip-indent": "^2.0.0",
     "toml-js": "0.0.8",
     "typography": "^0.7.0"
   },
@@ -40,6 +43,7 @@
   "main": "n/a",
   "scripts": {
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gatsby develop"
   }
 }

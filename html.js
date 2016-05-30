@@ -2,7 +2,6 @@ import React from 'react'
 import DocumentTitle from 'react-document-title'
 
 import { prefixLink } from 'gatsby-helpers'
-import { TypographyStyle } from 'utils/typography'
 
 
 module.exports = React.createClass({
@@ -30,10 +29,9 @@ module.exports = React.createClass({
           />
           <title>{title}</title>
           <link rel="shortcut icon" href={this.props.favicon} />
-          <TypographyStyle />
           {cssLink}
         </head>
-        <body>
+        <body className="adj adj-background">
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
           <script src={prefixLink('/bundle.js')} />
         </body>
