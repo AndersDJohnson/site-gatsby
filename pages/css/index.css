@@ -1,8 +1,5 @@
+@import "vars.css";
 @import "react-burger-menu.css";
-
-:root {
-  --color: rgba(255,255,255,.75);
-}
 
 html {
   height: 100%;
