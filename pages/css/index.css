@@ -102,6 +102,7 @@ body {
 
 .adj-hero-name {
   text-transform: uppercase;
+  font-family: Oswald, sans-serif;
 }
 
 .adj-hero-logo {
@@ -138,6 +139,7 @@ body {
   /*background: transparent;*/
   text-transform: uppercase;
   /*font-weight: bold;*/
+  font-family: Oswald, sans-serif;
 
   &:hover {
     background: rgba(255,255,255,.6);

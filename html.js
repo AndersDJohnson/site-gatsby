@@ -30,6 +30,7 @@ module.exports = React.createClass({
           <title>{title}</title>
           <link rel="shortcut icon" href={this.props.favicon} />
           {cssLink}
+          <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
         </head>
         <body className="adj adj-background">
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
