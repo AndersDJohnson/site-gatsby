@@ -2,6 +2,8 @@ import React from 'react'
 import Markdown from 'react-remarkable'
 import ReactMarkdown from 'react-markdown'
 import stripIndent from 'strip-indent'
+import { Icon } from 'react-fa'
+import { linksById } from '../../meta/nav'
 // import AnchorJS from 'anchor-js'
 
 export default class Resume extends React.Component {
@@ -16,7 +18,8 @@ export default class Resume extends React.Component {
     return (
       <div>
         <h1 className="adj-page-heading">
-          Resume
+          <Icon name={linksById.resume.icon} className="adj-menu-item-icon" />
+          {linksById.resume.name}
         </h1>
 
         <div className="adj-page">

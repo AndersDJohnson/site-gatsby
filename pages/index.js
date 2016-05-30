@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import { Icon } from 'react-fa'
+import { linksById } from '../meta/nav'
 
 import './css/index.css'
 
@@ -19,12 +20,12 @@ export default class Index extends React.Component {
           </h1>
 
           <nav>
-            <Link to={prefixLink('/resume/')} className="adj-btn adj-btn-lg adj-btn-home">
-              <Icon name="briefcase" /> Resume
+            <Link to={prefixLink(linksById.resume.url)} className="adj-btn adj-btn-lg adj-btn-home">
+              <Icon name={linksById.resume.icon} /> {linksById.resume.name}
             </Link>
 
-            <Link to={prefixLink('/work/')} className="adj-btn adj-btn-lg adj-btn-home">
-              <Icon name="desktop" /> Work
+            <Link to={prefixLink(linksById.work.url)} className="adj-btn adj-btn-lg adj-btn-home">
+              <Icon name={linksById.work.icon} /> {linksById.work.name}
             </Link>
 
             {/*<Link to={prefixLink('/blog/')} className="adj-btn adj-btn-lg adj-btn-home">
