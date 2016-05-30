@@ -82,7 +82,7 @@ export default class MenuContent extends React.Component {
         <nav>
           <ul className="adj-list-unstyled">
             {links.map(link =>
-              <li className="adj-menu-item">
+              <li key={link.url} className="adj-menu-item">
                 <Link to={link.url} className="adj-link-unstyled" onClick={this.props.onLinkClick}>
                   <Icon name={link.icon}  className="adj-menu-item-icon" />
                   {link.name}
@@ -93,7 +93,7 @@ export default class MenuContent extends React.Component {
 
           <ul className="adj-list-unstyled">
             {externalLinks.map(link =>
-              <li className="adj-menu-item">
+              <li key={link.url} className="adj-menu-item">
                 <Link to={prefixLink(link.url)} className="adj-link-unstyled" target="_blank">
                   <Icon name={link.icon} className="adj-menu-item-icon" />
                   {link.name}
