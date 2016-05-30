@@ -28,7 +28,8 @@
 /* General sidebar styles */
 .bm-menu {
   background: #373a47;
-  padding: 2.5em 1.5em 0;
+  /*padding: 2.5em 1.5em 0;*/
+  padding: 1em 0 0;
   font-size: 1.15em;
 }
 
@@ -40,7 +41,7 @@
 /* Wrapper for item list */
 .bm-item-list {
   color: white;
-  padding: 0.8em;
+  /*padding: 0.8em;*/
 }
 
 /* Styling of overlay */

@@ -46,7 +46,18 @@ body {
 
 
 .adj-menu-item {
-  padding: .25em 0;
+}
+
+.adj-menu-item-link {
+  display: block;
+  padding: .25em 1em;
+  text-transform: uppercase;
+  font-family: var(--font-family-display);
+  transition: background 250ms;
+
+  &:hover {
+    background: rgba(255,255,255,.25);
+  }
 }
 
 .adj-menu-item-icon {
@@ -58,6 +69,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-family: var(--font-family-display);
+  font-size: 3rem;
 }
 
 .adj-page {
@@ -97,9 +109,9 @@ body {
 
 .adj-header-name {
   float: left;
-  padding: 1rem;
-  font-size: 1rem;
-  line-height: 1rem;
+  padding: .5rem;
+  font-size: 2rem;
+  line-height: 2rem;
   text-transform: uppercase;
   font-family: var(--font-family-display);
 }
@@ -112,6 +124,7 @@ body {
 .adj-hero-name {
   text-transform: uppercase;
   font-family: var(--font-family-display);
+  font-size: 3rem;
 }
 
 .adj-hero-logo {
