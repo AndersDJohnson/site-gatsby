@@ -19,9 +19,9 @@ export default class Index extends React.Component {
             Anders D. Johnson
           </h1>
 
-          <p>
-            Software developer passionate about the web.
-          </p>
+          <h2>
+            Software developer & web enthusiast
+          </h2>
 
           <nav>
             <Link to={prefixLink(linksById.resume.url)} className="adj-btn adj-btn-lg adj-btn-home">
