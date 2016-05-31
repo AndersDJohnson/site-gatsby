@@ -35,7 +35,7 @@ export var externalLinks = [
     url: 'tel:612-581-2003',
     name: 'Phone',
     icon: 'phone',
-  },,
+  },
   {
     id: 'linkedIn',
     url: 'https://www.linkedin.com/pub/anders-johnson/18/822/446',
