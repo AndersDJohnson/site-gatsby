@@ -50,6 +50,6 @@
     "watch": "gatsby develop",
     "build": "gatsby build --prefix-links",
     "build-local": "gatsby build",
-    "deploy": "gh-pages -d public"
+    "deploy": "npm run build && gh-pages -d public"
   }
 }
