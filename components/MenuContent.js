@@ -12,7 +12,7 @@ export default class MenuContent extends React.Component {
           <ul className="adj-list-unstyled">
             {links.map(link =>
               <li key={link.url} className="adj-menu-item">
-                <Link to={link.url} className="adj-menu-item-link adj-link-unstyled" onClick={this.props.onLinkClick}>
+                <Link to={prefixLink(link.url)} className="adj-menu-item-link adj-link-unstyled" onClick={this.props.onLinkClick}>
                   <Icon name={link.icon}  className="adj-menu-item-icon" />
                   {link.name}
                 </Link>
