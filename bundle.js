@@ -29533,7 +29533,7 @@
 	
 	// Function to add prefix to links.
 	var prefixLink = function prefixLink(_link) {
-	  if (false) {
+	  if ("boolean" !== 'undefined' && (true) !== null && (true) && _config.config.linkPrefix !== null) {
 	    var invariantMessage = '\n    You\'re trying to build your site with links prefixed\n    but you haven\'t set \'linkPrefix\' in your config.toml.\n    ';
 	    (0, _invariant2.default)((0, _isString2.default)(_config.config.linkPrefix), invariantMessage);
 	
