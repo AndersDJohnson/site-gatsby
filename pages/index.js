@@ -19,6 +19,10 @@ export default class Index extends React.Component {
             Anders D. Johnson
           </h1>
 
+          <p>
+            Software developer passionate about the web.
+          </p>
+
           <nav>
             <Link to={prefixLink(linksById.resume.url)} className="adj-btn adj-btn-lg adj-btn-home">
               <Icon name={linksById.resume.icon} /> {linksById.resume.name}
@@ -32,10 +36,6 @@ export default class Index extends React.Component {
               Blog
             </Link>*/}
           </nav>
-
-          <p>
-            Software developer passionate about the web.
-          </p>
 
         </div>
 

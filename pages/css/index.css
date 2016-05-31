@@ -125,6 +125,7 @@ body {
   text-transform: uppercase;
   font-family: var(--font-family-display);
   font-size: 3rem;
+  margin-bottom: 0;
 }
 
 .adj-hero-logo {
