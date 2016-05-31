@@ -68698,7 +68698,7 @@
 	                { key: link.url, className: 'adj-menu-item' },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
-	                  { to: (0, _gatsbyHelpers.prefixLink)(link.url), className: 'adj-menu-item-link adj-link-unstyled', target: '_blank' },
+	                  { to: link.url, className: 'adj-menu-item-link adj-link-unstyled', target: '_blank' },
 	                  _react2.default.createElement(_reactFa.Icon, { name: link.icon, className: 'adj-menu-item-icon' }),
 	                  link.name
 	                )
