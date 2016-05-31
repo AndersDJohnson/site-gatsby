@@ -68682,7 +68682,7 @@
 	                { key: link.url, className: 'adj-menu-item' },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
-	                  { to: link.url, className: 'adj-menu-item-link adj-link-unstyled', onClick: _this2.props.onLinkClick },
+	                  { to: (0, _gatsbyHelpers.prefixLink)(link.url), className: 'adj-menu-item-link adj-link-unstyled', onClick: _this2.props.onLinkClick },
 	                  _react2.default.createElement(_reactFa.Icon, { name: link.icon, className: 'adj-menu-item-icon' }),
 	                  link.name
 	                )
