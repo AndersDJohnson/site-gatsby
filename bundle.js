@@ -29562,7 +29562,7 @@
 				"file": {
 					"path": "_template.jsx",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/_template.jsx",
+					"absolute": "/Users/anders/code/site-gatsby/_template.jsx",
 					"root": "",
 					"dirname": "",
 					"basename": "_template.jsx",
@@ -29578,7 +29578,7 @@
 				"file": {
 					"path": "404.md",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/404.md",
+					"absolute": "/Users/anders/code/site-gatsby/404.md",
 					"root": "",
 					"dirname": "",
 					"basename": "404.md",
@@ -29594,7 +29594,7 @@
 				"file": {
 					"path": "coffee-react.cjsx",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/coffee-react.cjsx",
+					"absolute": "/Users/anders/code/site-gatsby/coffee-react.cjsx",
 					"root": "",
 					"dirname": "",
 					"basename": "coffee-react.cjsx",
@@ -29610,7 +29610,7 @@
 				"file": {
 					"path": "html.html",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/html.html",
+					"absolute": "/Users/anders/code/site-gatsby/html.html",
 					"root": "",
 					"dirname": "",
 					"basename": "html.html",
@@ -29629,7 +29629,7 @@
 				"file": {
 					"path": "index.js",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/index.js",
+					"absolute": "/Users/anders/code/site-gatsby/index.js",
 					"root": "",
 					"dirname": "",
 					"basename": "index.js",
@@ -29645,7 +29645,7 @@
 				"file": {
 					"path": "index0.js",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/index0.js",
+					"absolute": "/Users/anders/code/site-gatsby/index0.js",
 					"root": "",
 					"dirname": "",
 					"basename": "index0.js",
@@ -29661,7 +29661,7 @@
 				"file": {
 					"path": "json.json",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/json.json",
+					"absolute": "/Users/anders/code/site-gatsby/json.json",
 					"root": "",
 					"dirname": "",
 					"basename": "json.json",
@@ -29677,7 +29677,7 @@
 				"file": {
 					"path": "less.js",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/less.js",
+					"absolute": "/Users/anders/code/site-gatsby/less.js",
 					"root": "",
 					"dirname": "",
 					"basename": "less.js",
@@ -29693,7 +29693,7 @@
 				"file": {
 					"path": "markdown.md",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/markdown.md",
+					"absolute": "/Users/anders/code/site-gatsby/markdown.md",
 					"root": "",
 					"dirname": "",
 					"basename": "markdown.md",
@@ -29711,7 +29711,7 @@
 				"file": {
 					"path": "postcss.js",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/postcss.js",
+					"absolute": "/Users/anders/code/site-gatsby/postcss.js",
 					"root": "",
 					"dirname": "",
 					"basename": "postcss.js",
@@ -29727,7 +29727,7 @@
 				"file": {
 					"path": "react.js",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/react.js",
+					"absolute": "/Users/anders/code/site-gatsby/react.js",
 					"root": "",
 					"dirname": "",
 					"basename": "react.js",
@@ -29743,7 +29743,7 @@
 				"file": {
 					"path": "resume/index.js",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/resume/index.js",
+					"absolute": "/Users/anders/code/site-gatsby/resume/index.js",
 					"root": "",
 					"dirname": "resume",
 					"basename": "index.js",
@@ -29759,7 +29759,7 @@
 				"file": {
 					"path": "sass.js",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/sass.js",
+					"absolute": "/Users/anders/code/site-gatsby/sass.js",
 					"root": "",
 					"dirname": "",
 					"basename": "sass.js",
@@ -29775,7 +29775,7 @@
 				"file": {
 					"path": "toml.toml",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/toml.toml",
+					"absolute": "/Users/anders/code/site-gatsby/toml.toml",
 					"root": "",
 					"dirname": "",
 					"basename": "toml.toml",
@@ -29791,7 +29791,7 @@
 				"file": {
 					"path": "yaml.yaml",
 					"isAbsolute": false,
-					"absolute": "/Users/anders/code/gatsby-site/yaml.yaml",
+					"absolute": "/Users/anders/code/site-gatsby/yaml.yaml",
 					"root": "",
 					"dirname": "",
 					"basename": "yaml.yaml",
