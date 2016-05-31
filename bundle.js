@@ -69188,6 +69188,11 @@
 	            'Anders D. Johnson'
 	          ),
 	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Software developer passionate about the web.'
+	          ),
+	          _react2.default.createElement(
 	            'nav',
 	            null,
 	            _react2.default.createElement(
@@ -69204,11 +69209,6 @@
 	              ' ',
 	              _nav.linksById.work.name
 	            )
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Software developer passionate about the web.'
 	          )
 	        )
 	      );
