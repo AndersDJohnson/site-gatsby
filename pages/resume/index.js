@@ -1,5 +1,6 @@
 import React from 'react'
 import Markdown from 'react-remarkable'
+import { Link } from 'react-router'
 import ReactMarkdown from 'react-markdown'
 import stripIndent from 'strip-indent'
 import { Icon } from 'react-fa'
@@ -18,11 +19,16 @@ export default class Resume extends React.Component {
     return (
       <div>
         <h1 className="adj-page-heading">
-          <Icon name={linksById.resume.icon} className="adj-menu-item-icon" />
-          {linksById.resume.name}
+          <Link to="/resume/">
+            <Icon name={linksById.resume.icon} className="adj-menu-item-icon" />
+            {linksById.resume.name}
+          </Link>
         </h1>
 
         <div className="adj-page">
+
+          {/*<Link to={`${location.pathname}#other`}>OTHER</Link>*/}
+          <Link to="/resume/#other">OTHER</Link>
 
           <p>
           Talented full-stack web developer & software engineer
@@ -57,7 +63,7 @@ export default class Resume extends React.Component {
             Technologies: JavaScript, Backbone.js, jQuery, Grunt, Bootstrap, CSS, HTML, Java, Ant, Maven, Groovy, Tomcat, Spring MVC, Oracle PL/SQL, MS SQL Server, Solr, JUnit, Spock, Geb, Bash, Batch scripting, hybrid web/native mobile apps, AngularJS, REST APIs, PHP, Apache, LAMP, Flash/ActionScript/Flex/AIR/SWF/Animate, Classic ASP/VBScript, Node.js, XML, JSON, SOAP, JAXB, JiBX, Hudson/Jenkins, Splunk, AppDynamics, JIRA, JSPWiki, Subversion, WebSVN, Eclipse, IntelliJ IDEA, etc.
           `)} />
 
-          <h2>Other</h2>
+          <h2 id="other">Other</h2>
 
           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 
