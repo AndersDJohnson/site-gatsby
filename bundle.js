@@ -75921,8 +75921,6 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var pathname = this.props.location.pathname;
-	
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'adj-page-resume' },
@@ -75941,7 +75939,7 @@
 	          { className: 'adj-page' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: (0, _gatsbyHelpers.prefixLink)(pathname + '#other') },
+	            { to: (0, _gatsbyHelpers.prefixLink)('/resume/#other') },
 	            'OTHER'
 	          ),
 	          _react2.default.createElement(
