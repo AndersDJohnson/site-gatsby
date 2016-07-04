@@ -16,12 +16,16 @@ export default class Resume extends React.Component {
     //  * https://github.com/bryanbraun/anchorjs/issues/66
     //  * ReactDOM.findDOMNode(this)
     const anchors = window.anchors = window.anchors || new AnchorJS()
-    anchors.add()
+    const els = [
+      'h1', 'h2', 'h3', 'h4', 'h5', 'h6'
+    ]
+    const classes = els.map(el => '.adj-page-resume ' + el).join(',')
+    anchors.add(classes)
   }
 
   render () {
     return (
-      <div>
+      <div className="adj-page-resume">
         <h1 className="adj-page-heading">
           <Link to="/resume/">
             <Icon name={linksById.resume.icon} className="adj-menu-item-icon" />
