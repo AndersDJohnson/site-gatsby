@@ -1,5 +1,5 @@
 import { anchorate } from 'anchorate'
 
-exports.onRouteChange = function () {
+exports.onRouteUpdate = function () {
   anchorate()
 }
