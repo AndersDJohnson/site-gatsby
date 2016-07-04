@@ -12,6 +12,9 @@ export default class Resume extends React.Component {
   componentDidMount () {
     // Not great support for anchor links in Gatsby / React Router / history.
     // @see https://github.com/gatsbyjs/gatsby/issues/302
+    // TODO: Scope to this element:
+    //  * https://github.com/bryanbraun/anchorjs/issues/66
+    //  * ReactDOM.findDOMNode(this)
     const anchors = window.anchors = window.anchors || new AnchorJS()
     anchors.add()
   }
