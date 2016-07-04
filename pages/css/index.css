@@ -56,30 +56,40 @@ body {
 }
 
 .adj-react-transition-header-item {
+  position: relative;
+  top: 0;
   height: 5rem;
 
   &.adj-react-transition-header-enter {
-    /*opacity: 0.01;*/
     opacity: 0;
-    /*height: 1px;*/
+    top: -5rem;
     height: 0;
     overflow: hidden;
-    transition: opacity var(--transition-time) ease-in-out, height var(--transition-time) ease-in-out;
+    transition:
+      opacity var(--transition-time) ease-in-out,
+      top var(--transition-time) ease-in-out,
+      height var(--transition-time) ease-in-out;
   }
 
   &.adj-react-transition-header-enter.adj-react-transition-header-enter-active {
     opacity: 1;
+    top: 0;
     height: 5rem;
   }
 
   &.adj-react-transition-header-leave {
     opacity: 1;
+    top: 0;
     height: 5rem;
-    transition: opacity var(--transition-time) ease-in-out, height var(--transition-time) ease-in-out;
+    transition:
+      opacity var(--transition-time) ease-in-out,
+      top var(--transition-time) ease-in-out,
+      height var(--transition-time) ease-in-out;
   }
 
   &.adj-react-transition-header-leave.adj-react-transition-header-leave-active {
     opacity: 0;
+    top: -5rem;
     height: 0;
   }
 }
