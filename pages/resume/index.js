@@ -1,6 +1,7 @@
 import React from 'react'
 import Markdown from 'react-remarkable'
 import { Link } from 'react-router'
+import { prefixLink } from 'gatsby-helpers'
 import ReactMarkdown from 'react-markdown'
 import stripIndent from 'strip-indent'
 import { Icon } from 'react-fa'
@@ -35,8 +36,7 @@ export default class Resume extends React.Component {
 
         <div className="adj-page">
 
-          {/*<Link to={`${location.pathname}#other`}>OTHER</Link>*/}
-          <Link to="/resume/#other">OTHER</Link>
+          <Link to={prefixLink('/resume/#other')}>OTHER</Link>
 
           <p>
           Talented full-stack web developer & software engineer
