@@ -5,14 +5,15 @@ import ReactMarkdown from 'react-markdown'
 import stripIndent from 'strip-indent'
 import { Icon } from 'react-fa'
 import { linksById } from '../../meta/nav'
-// import AnchorJS from 'anchor-js'
+import AnchorJS from 'anchor-js'
 
 export default class Resume extends React.Component {
 
   componentDidMount () {
-    // Waiting on support for anchor links in Gatsby
+    // Not great support for anchor links in Gatsby / React Router / history.
     // @see https://github.com/gatsbyjs/gatsby/issues/302
-    // AnchorJS.anchors.add()
+    const anchors = window.anchors = window.anchors || new AnchorJS()
+    anchors.add()
   }
 
   render () {
