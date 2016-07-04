@@ -23,6 +23,66 @@ body {
   margin: 0;
 }
 
+.adj-react-transition-group > * {
+  width: 100%;
+  position: relative;
+}
+
+.adj-react-transition-enter {
+  opacity: 0.01;
+  transition: opacity var(--transition-time) ease-in;
+  position: absolute;
+}
+
+.adj-react-transition-enter.adj-react-transition-enter-active {
+  opacity: 1;
+}
+
+.adj-react-transition-leave {
+  opacity: 1;
+  transition: opacity var(--transition-time) ease-in;
+  position: absolute;
+}
+
+.adj-react-transition-leave.adj-react-transition-leave-active {
+  opacity: 0;
+}
+
+
+/* */
+
+.adj-react-transition-header-group {
+  overflow: hidden;
+}
+
+.adj-react-transition-header-item {
+  height: 5rem;
+
+  &.adj-react-transition-header-enter {
+    /*opacity: 0.01;*/
+    opacity: 0;
+    /*height: 1px;*/
+    height: 0;
+    overflow: hidden;
+    transition: opacity var(--transition-time) ease-in, height var(--transition-time) ease-in;
+  }
+
+  &.adj-react-transition-header-enter.adj-react-transition-header-enter-active {
+    opacity: 1;
+    height: 5rem;
+  }
+
+  &.adj-react-transition-header-leave {
+    opacity: 1;
+    height: 5rem;
+    transition: opacity var(--transition-time) ease-in, height var(--transition-time) ease-in;
+  }
+
+  &.adj-react-transition-header-leave.adj-react-transition-header-leave-active {
+    opacity: 0;
+    height: 0;
+  }
+}
 
 .adj-center {
   text-align: center;
