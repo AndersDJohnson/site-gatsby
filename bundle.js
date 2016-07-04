@@ -75910,7 +75910,7 @@
 	      //  * https://github.com/bryanbraun/anchorjs/issues/66
 	      //  * ReactDOM.findDOMNode(this)
 	      var anchors = window.anchors = window.anchors || new _anchorJs2.default();
-	      var els = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
+	      var els = ['h1:not(.adj-page-heading)', 'h2', 'h3', 'h4', 'h5', 'h6'];
 	      var classes = els.map(function (el) {
 	        return '.adj-page-resume ' + el;
 	      }).join(',');
