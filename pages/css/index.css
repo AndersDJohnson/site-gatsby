@@ -23,6 +23,24 @@ body {
   margin: 0;
 }
 
+.adj-react-transition-enter {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
+
+.adj-react-transition-enter.adj-react-transition-enter-active {
+  opacity: 1;
+}
+
+.adj-react-transition-leave {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.adj-react-transition-leave.example-leave-active {
+  opacity: 0;
+  /*opacity: 0.01;*/
+}
 
 .adj-center {
   text-align: center;

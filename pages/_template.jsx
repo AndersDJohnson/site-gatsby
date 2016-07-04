@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
@@ -135,22 +136,33 @@ module.exports = React.createClass({
 
           <div style={{position: 'relative'}}>
 
-            {/*<Container
-              style={{
-                maxWidth: 960,
-                // padding: `${rhythm(1)} ${rhythm(1/2)}`,
-                // padding: '1em 0.5em',
-                paddingTop: 0,
-              }}
-            >*/}
+              {/*<Container
+                style={{
+                  maxWidth: 960,
+                  // padding: `${rhythm(1)} ${rhythm(1/2)}`,
+                  // padding: '1em 0.5em',
+                  paddingTop: 0,
+                }}
+              >*/}
 
-              {header}
+                {header}
 
-              <div>
-                {this.props.children}
-              </div>
+                <div>
+                  <ReactCSSTransitionGroup
+                    component="div"
+                    transitionName="adj-react-transition"
+                    transitionEnterTimeout={1000}
+                    transitionLeaveTimeout={1000}
+                  >
+                    {React.cloneElement(this.props.children, {
+                      key: location.pathname
+                    })}
+                    {/*{this.props.children}*/}
+                  </ReactCSSTransitionGroup>
+                </div>
 
-            {/*</Container>*/}
+              {/*</Container>*/}
+
 
           </div>
         </div>
