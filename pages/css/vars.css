@@ -2,4 +2,6 @@
 :root {
   --color: rgba(255,255,255,.75);
   --font-family-display: Oswald, sans-serif;
+  /*--transition-time: 50000ms;*/
+  --transition-time: 1000ms;
 }

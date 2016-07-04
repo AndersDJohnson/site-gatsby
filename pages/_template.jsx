@@ -79,47 +79,54 @@ module.exports = React.createClass({
     var header
     var route = _.last(this.props.routes)
     var path = route.path
-    if (!path || path == '/') {
+    const isIndex = !path || path == '/'
+    // if (false) {
+    if (isIndex) {
       header = (
         null
       )
     }
+    /*<div className="adj-header adj-clearfix" style={{visibility: isIndex ? 'hidden' : 'visible' }}>*/
     else {
       header = (
-        <div className="adj-header adj-clearfix">
+        <div className="adj-react-transition-header-item">
+          <div className="adj-header adj-clearfix">
+            <Link to={prefixLink('/')} className="adj-link-unstyled">
+              <div className="adj-header-logo-box">
+                <img src={prefixLink('/images/logo.svg')} className="adj-header-logo" />
+              </div>
 
-          <Link to={prefixLink('/')} className="adj-link-unstyled">
-            <div className="adj-header-logo-box">
-              <img src={prefixLink('/images/logo.svg')} className="adj-header-logo" />
+              <div className="adj-header-name">
+                Anders D. Johnson
+              </div>
+            </Link>
+
+            {/*<nav>
+              <Link to={prefixLink('/resume/')} className="adj-btn adj-btn-lg adj-btn-home">
+                Resume
+              </Link>
+
+              <Link to={prefixLink('/work/')} className="adj-btn adj-btn-lg adj-btn-home">
+                Work
+              </Link>
+
+              <Link to={prefixLink('/blog/')} className="adj-btn adj-btn-lg adj-btn-home">
+                Blog
+              </Link>
+            </nav>*/}
+
+            <br></br>
+
+            <div className="adj-cursor" style={{position: 'absolute', left: this.state.clientX, top: this.state.clientY}}>
+              {/*OK*/}
             </div>
-
-            <div className="adj-header-name">
-              Anders D. Johnson
-            </div>
-          </Link>
-
-          {/*<nav>
-            <Link to={prefixLink('/resume/')} className="adj-btn adj-btn-lg adj-btn-home">
-              Resume
-            </Link>
-
-            <Link to={prefixLink('/work/')} className="adj-btn adj-btn-lg adj-btn-home">
-              Work
-            </Link>
-
-            <Link to={prefixLink('/blog/')} className="adj-btn adj-btn-lg adj-btn-home">
-              Blog
-            </Link>
-          </nav>*/}
-
-          <br></br>
-
-          <div className="adj-cursor" style={{position: 'absolute', left: this.state.clientX, top: this.state.clientY}}>
-            {/*OK*/}
           </div>
         </div>
       )
     }
+
+    // const transitionTime = 50000
+    const transitionTime = 1000
 
     return (
       <div>
@@ -145,14 +152,23 @@ module.exports = React.createClass({
                 }}
               >*/}
 
-                {header}
+                <ReactCSSTransitionGroup
+                  component="div"
+                  className="adj-react-transition-header-group"
+                  transitionName="adj-react-transition-header"
+                  transitionEnterTimeout={transitionTime}
+                  transitionLeaveTimeout={transitionTime}
+                >
+                  {header}
+                </ReactCSSTransitionGroup>
 
                 <div>
                   <ReactCSSTransitionGroup
                     component="div"
+                    className="adj-react-transition-group"
                     transitionName="adj-react-transition"
-                    transitionEnterTimeout={1000}
-                    transitionLeaveTimeout={1000}
+                    transitionEnterTimeout={transitionTime}
+                    transitionLeaveTimeout={transitionTime}
                   >
                     {React.cloneElement(this.props.children, {
                       key: location.pathname
