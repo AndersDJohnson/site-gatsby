@@ -140,6 +140,11 @@ body {
   text-transform: uppercase;
   font-family: var(--font-family-display);
   font-size: 3rem;
+
+  & a {
+    color: var(--color);
+    text-decoration: none;
+  }
 }
 
 .adj-page {

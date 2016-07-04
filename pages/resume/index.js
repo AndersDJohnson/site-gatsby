@@ -17,7 +17,7 @@ export default class Resume extends React.Component {
     //  * ReactDOM.findDOMNode(this)
     const anchors = window.anchors = window.anchors || new AnchorJS()
     const els = [
-      'h1', 'h2', 'h3', 'h4', 'h5', 'h6'
+      'h1:not(.adj-page-heading)', 'h2', 'h3', 'h4', 'h5', 'h6'
     ]
     const classes = els.map(el => '.adj-page-resume ' + el).join(',')
     anchors.add(classes)
