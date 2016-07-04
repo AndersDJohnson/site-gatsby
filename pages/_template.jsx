@@ -171,7 +171,7 @@ module.exports = React.createClass({
                     transitionLeaveTimeout={transitionTime}
                   >
                     {React.cloneElement(this.props.children, {
-                      key: location.pathname
+                      key: this.props.location.pathname
                     })}
                     {/*{this.props.children}*/}
                   </ReactCSSTransitionGroup>

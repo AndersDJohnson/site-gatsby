@@ -30,7 +30,7 @@ body {
 
 .adj-react-transition-enter {
   opacity: 0.01;
-  transition: opacity var(--transition-time) ease-in;
+  transition: opacity var(--transition-time) ease-in-out;
   position: absolute;
 }
 
@@ -40,7 +40,7 @@ body {
 
 .adj-react-transition-leave {
   opacity: 1;
-  transition: opacity var(--transition-time) ease-in;
+  transition: opacity var(--transition-time) ease-in-out;
   position: absolute;
 }
 
@@ -64,7 +64,7 @@ body {
     /*height: 1px;*/
     height: 0;
     overflow: hidden;
-    transition: opacity var(--transition-time) ease-in, height var(--transition-time) ease-in;
+    transition: opacity var(--transition-time) ease-in-out, height var(--transition-time) ease-in-out;
   }
 
   &.adj-react-transition-header-enter.adj-react-transition-header-enter-active {
@@ -75,7 +75,7 @@ body {
   &.adj-react-transition-header-leave {
     opacity: 1;
     height: 5rem;
-    transition: opacity var(--transition-time) ease-in, height var(--transition-time) ease-in;
+    transition: opacity var(--transition-time) ease-in-out, height var(--transition-time) ease-in-out;
   }
 
   &.adj-react-transition-header-leave.adj-react-transition-header-leave-active {
