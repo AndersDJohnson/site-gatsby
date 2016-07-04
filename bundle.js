@@ -75868,6 +75868,8 @@
 	
 	var _reactRouter = __webpack_require__(165);
 	
+	var _gatsbyHelpers = __webpack_require__(387);
+	
 	var _reactMarkdown = __webpack_require__(610);
 	
 	var _reactMarkdown2 = _interopRequireDefault(_reactMarkdown);
@@ -75919,6 +75921,8 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var pathname = this.props.location.pathname;
+	
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'adj-page-resume' },
@@ -75937,7 +75941,7 @@
 	          { className: 'adj-page' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/resume/#other' },
+	            { to: (0, _gatsbyHelpers.prefixLink)(pathname + '#other') },
 	            'OTHER'
 	          ),
 	          _react2.default.createElement(
