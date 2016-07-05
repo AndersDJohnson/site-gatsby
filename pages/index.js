@@ -9,7 +9,7 @@ import './css/index.css'
 export default class Index extends React.Component {
   render () {
     return (
-      <div id="outer-container">
+      <div className="adj-page-index">
 
         <div className="adj-center adj-hero">
 

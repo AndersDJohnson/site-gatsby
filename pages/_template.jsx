@@ -83,7 +83,7 @@ module.exports = React.createClass({
     // if (false) {
     if (isIndex) {
       header = (
-        null
+        <div className="adj-react-transition-header-item"></div>
       )
     }
     /*<div className="adj-header adj-clearfix" style={{visibility: isIndex ? 'hidden' : 'visible' }}>*/
@@ -159,7 +159,10 @@ module.exports = React.createClass({
                   transitionEnterTimeout={transitionTime}
                   transitionLeaveTimeout={transitionTime}
                 >
-                  {header}
+                  {React.cloneElement(header, {
+                    key: this.props.location.pathname
+                  })}
+                  {/*{header}*/}
                 </ReactCSSTransitionGroup>
 
                 <div>
