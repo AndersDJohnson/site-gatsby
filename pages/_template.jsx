@@ -160,7 +160,8 @@ module.exports = React.createClass({
                   transitionLeaveTimeout={transitionTime}
                 >
                   {React.cloneElement(header, {
-                    key: this.props.location.pathname
+                    // key: this.props.location.pathname
+                    key: isIndex
                   })}
                   {/*{header}*/}
                 </ReactCSSTransitionGroup>
@@ -175,6 +176,7 @@ module.exports = React.createClass({
                   >
                     {React.cloneElement(this.props.children, {
                       key: this.props.location.pathname
+                      // key: isIndex
                     })}
                     {/*{this.props.children}*/}
                   </ReactCSSTransitionGroup>
