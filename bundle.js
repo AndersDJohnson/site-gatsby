@@ -30949,7 +30949,7 @@
 	    var isIndex = !path || path == '/';
 	    // if (false) {
 	    if (isIndex) {
-	      header = null;
+	      header = _react2.default.createElement('div', { className: 'adj-react-transition-header-item' });
 	    }
 	    /*<div className="adj-header adj-clearfix" style={{visibility: isIndex ? 'hidden' : 'visible' }}>*/
 	    else {
@@ -31009,7 +31009,9 @@
 	              transitionEnterTimeout: transitionTime,
 	              transitionLeaveTimeout: transitionTime
 	            },
-	            header
+	            _react2.default.cloneElement(header, {
+	              key: this.props.location.pathname
+	            })
 	          ),
 	          _react2.default.createElement(
 	            'div',
@@ -75313,7 +75315,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { id: 'outer-container' },
+	        { className: 'adj-page-index' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'adj-center adj-hero' },
