@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 import Markdown from 'react-remarkable'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
@@ -7,6 +8,8 @@ import stripIndent from 'strip-indent'
 import { Icon } from 'react-fa'
 import { linksById } from '../../meta/nav'
 import AnchorJS from 'anchor-js'
+import linkedinProfile from '../../meta/linkedinProfile.json'
+import * as resume from '../../meta/resume'
 
 export default class Resume extends React.Component {
 
@@ -24,7 +27,43 @@ export default class Resume extends React.Component {
     anchors.add(classes)
   }
 
+  renderDate (date) {
+    const m = moment(`${date.year}-${date.month}`, 'YYYY-M')
+    return (
+      <span>
+        {m.format('MMMM YYYY')}
+      </span>
+    )
+  }
+
   render () {
+    console.log({linkedinProfile})
+    const { summary } = linkedinProfile
+    const positions = linkedinProfile.positions.values
+    const educations = linkedinProfile.educations.values
+    const courses = linkedinProfile.courses.values
+    const honors = linkedinProfile.honorsAwards.values
+    const { tests, honorsAwardsDetails } = resume
+
+    const toc = [
+      {
+        name: 'Experience',
+        hash: 'experience',
+      },
+      {
+        name: 'Education',
+        hash: 'education',
+      },
+      {
+        name: 'Honors',
+        hash: 'honors',
+      },
+      {
+        name: 'Tests',
+        hash: 'tests',
+      },
+    ]
+
     return (
       <div className="adj-page-resume">
         <h1 className="adj-page-heading">
@@ -36,55 +75,102 @@ export default class Resume extends React.Component {
 
         <div className="adj-page">
 
-          <Link to={prefixLink('/resume/#other')}>OTHER</Link>
+          <ul>
+            {toc.map(t => {
+              return <li>
+                <Link to={prefixLink(`/resume/#${t.hash}`)}>{t.name}</Link>
+              </li>
+            })}
+          </ul>
 
-          <p>
-          Talented full-stack web developer & software engineer
-          with 5+ years of experience in web technologies and e-commerce.
-          Passion for modern front end.
-          Open-source contributor & creator.
-          Some DevOps, UI/UX, PM & QA.
-          </p>
+          <h2>Profile</h2>
 
+          <ReactMarkdown source={summary} />
 
-          <h2>Senior Programmer Analyst @ Jostens</h2>
-          <h3>June 2013 &ndash; Present</h3>
+          <div class="adj-resume-section">
+            <h2>Experience</h2>
 
-          <p>Full-stack web developer on the enterprise e-commerce team.</p>
+            {positions.map(position => {
+              return (
+                <div>
+                  <h3>{position.title}</h3>
+                  <div className="adj-resume-company-name">{position.company.name}</div>
+                  <div>
+                    {this.renderDate(position.startDate)}
+                    {' '}&ndash;{' '}
+                    {position.isCurrent ? 'Present' : this.renderDate(position.endDate)}
+                  </div>
 
-          <ReactMarkdown source={stripIndent(`
-            #### Promotions
+                  <ReactMarkdown source={position.summary} />
+                </div>
+              )
+            })}
+          </div>
 
-            - From Programmer Analyst - February 2016
-            - From Associate Programmer Analyst - January 2014
+          <div class="adj-resume-section">
+            <h2>Education</h2>
 
-            #### Work
+            {educations.map(education => {
+              return (
+                <div>
+                  <h3>{education.fieldOfStudy}, {education.degree}</h3>
+                  <div>{education.schoolName}</div>
+                  <div>
+                    {this.renderDate(education.startDate)}
+                    {' '}&ndash;{' '}
+                    {education.isCurrent ? 'Present' : this.renderDate(education.endDate)}
+                  </div>
 
-            - Develop new single-page web app with AngularJS and Bootstrap 3 using a REST API backed by LAMP stack, deployed via AWS OpsWorks on the Amazon cloud: SchoolWay https://webapp.myschoolway.com/
-            - New responsive design landing pages with Bootstrap 3 via Rhytymyx CMS to re-energize brand. New responsive design e-commerce web experience, including product configurators - Bootstrap, Backbone.js, etc. with legacy IE8 support - mobile sales increased from ~5% to 20+%.
-            - Web developer on new point of sale (POS) iOS hybrid app for sales reps on iPads. New JSON API web services backed by Java, Spring MVC, MyBatis, and Oracle PL/SQL, and lead the effort to utilize native/web app integration to share existing SPA web code to reduce costs and accelerate project timeline.
-            - Develop tooling for management of images using Groovy and ImageMagick.
-            - Maintenance on Flash/Flex/AIR Jewelry designer web apps and designed product image rendering services.
-            - Integrate website with Salesforce Live Agent customer service chat solution.
-            - Full-stack production support.
+                  <ReactMarkdown source={education.notes} />
+                  <ReactMarkdown source={education.activities} />
+                </div>
+              )
+            })}
 
-            Technologies: JavaScript, Backbone.js, jQuery, Grunt, Bootstrap, CSS, HTML, Java, Ant, Maven, Groovy, Tomcat, Spring MVC, Oracle PL/SQL, MS SQL Server, Solr, JUnit, Spock, Geb, Bash, Batch scripting, hybrid web/native mobile apps, AngularJS, REST APIs, PHP, Apache, LAMP, Flash/ActionScript/Flex/AIR/SWF/Animate, Classic ASP/VBScript, Node.js, XML, JSON, SOAP, JAXB, JiBX, Hudson/Jenkins, Splunk, AppDynamics, JIRA, JSPWiki, Subversion, WebSVN, Eclipse, IntelliJ IDEA, etc.
-          `)} />
+            <ul className="adj-resume-courses-list">
+              {courses.map(course => {
+                return (
+                  <li>
+                    <b>{course.number}</b>: {course.name}
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
 
-          <h2 id="other">Other</h2>
+          <div class="adj-resume-section">
+            <h2>Honors</h2>
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <ul className="adj-resume-honors-list">
+              {honors.map(honor => {
+                const details = honorsAwardsDetails[honor.id] || {}
+                return (
+                  <li>
+                    <b>{honor.name}</b>:
+                    {' '}
+                    {honor.issuer},
+                    {' '}
+                    {details.date ? this.renderDate(details.date) : ''}
+                    {details.description ? <ReactMarkdown source={details.description} /> : ''}
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
 
-          <ol>
-             <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-             <li>Aliquam tincidunt mauris eu risus.</li>
-             <li>Vestibulum auctor dapibus neque.</li>
-          </ol>
+          <div class="adj-resume-section">
+            <h2>Tests</h2>
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
+            <ul className="adj-resume-tests-list">
+              {tests.map(test => {
+                return (
+                  <li>
+                    <b>{test.name}</b>: {test.score} ({test.percentile} %ile)
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
 
         </div>
       </div>

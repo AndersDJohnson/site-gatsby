@@ -27,6 +27,15 @@ body {
   margin-top: -5rem;
 }
 
+.adj-resume-courses-list {
+  column-count: 2;
+  list-style-position: inside;
+}
+
+.adj-resume-company-name {
+  font-weight: bold;
+}
+
 .adj-react-transition-group > * {
   width: 100%;
   position: relative;

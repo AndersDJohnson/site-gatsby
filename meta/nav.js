@@ -1,6 +1,6 @@
 import _ from 'lodash'
 
-export var links = [
+export const links = [
   {
     id: 'home',
     url: '/',
@@ -21,9 +21,9 @@ export var links = [
   },
 ]
 
-export var linksById = _.mapKeys(links, link => link.id)
+export const linksById = _.mapKeys(links, link => link.id)
 
-export var externalLinks = [
+export const externalLinks = [
   {
     id: 'email',
     url: 'http://www.google.com/recaptcha/mailhide/d?k=016Hxt_X0bNon_-7v9lYYJ6A==&c=eIwgvd7-19GfJXTqKuG5gADRgTxRMhc8jm_JGgdqvA8=',
@@ -86,4 +86,4 @@ export var externalLinks = [
   },
 ]
 
-export var externalLinksById = _.mapKeys(externalLinks, link => link.id)
+export const externalLinksById = _.mapKeys(externalLinks, link => link.id)

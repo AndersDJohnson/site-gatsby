@@ -1,0 +1,760 @@
+{
+  "courses":  {
+    "_total": 33,
+    "values":  [
+       {
+        "id": 205,
+        "name": "Web Infrastructure",
+        "number": "INET 3102"
+      },
+       {
+        "id": 206,
+        "name": "Internet Programming",
+        "number": "CSCI 4131"
+      },
+       {
+        "id": 207,
+        "name": "Practice of Database Systems",
+        "number": "CSCI 4707"
+      },
+       {
+        "id": 208,
+        "name": "Advanced Algorithms & Data Structures",
+        "number": "CSCI 5421"
+      },
+       {
+        "id": 209,
+        "name": "Programming Languages",
+        "number": "CSCI 5106"
+      },
+       {
+        "id": 210,
+        "name": "Software Engineering II",
+        "number": "CSCI 5802"
+      },
+       {
+        "id": 211,
+        "name": "Software Engineering I",
+        "number": "CSCI 5801"
+      },
+       {
+        "id": 212,
+        "name": "Introduction to Artificial Intellgence",
+        "number": "CSCI 4511W"
+      },
+       {
+        "id": 213,
+        "name": "Introduction to Operating Systems",
+        "number": "CSCI 4061"
+      },
+       {
+        "id": 214,
+        "name": "Algorithms & Data Structures",
+        "number": "CSCI 4041"
+      },
+       {
+        "id": 215,
+        "name": "Program Design & Development",
+        "number": "CSCI 3081W"
+      },
+       {
+        "id": 216,
+        "name": "Computional Linear Algebra",
+        "number": "CSCI 2033"
+      },
+       {
+        "id": 217,
+        "name": "Formal Languages & Automata Theory",
+        "number": "CSCI 4011"
+      },
+       {
+        "id": 218,
+        "name": "Machine Architecture & Organization",
+        "number": "CSCI 2021"
+      },
+       {
+        "id": 219,
+        "name": "Discrete Structures of Computer Science",
+        "number": "CSCI 2011"
+      },
+       {
+        "id": 220,
+        "name": "Structure of Computer Programming II",
+        "number": "CSCI 1902"
+      },
+       {
+        "id": 221,
+        "name": "Structure of Computer Programming I",
+        "number": "CSCI 1901"
+      },
+       {
+        "id": 223,
+        "name": "Introduction to Data Mining",
+        "number": "CSCI 5523"
+      },
+       {
+        "id": 224,
+        "name": "Introduction to Computer Networks",
+        "number": "CSCI 4211"
+      },
+       {
+        "id": 225,
+        "name": "C Programming: Language & Applications",
+        "number": "INET 3101"
+      },
+       {
+        "id": 228,
+        "name": "Linear Algebra & Differential Equations (Calculus III)",
+        "number": "MATH 2243"
+      },
+       {
+        "id": 229,
+        "name": "Calculus II",
+        "number": "MATH 1272"
+      },
+       {
+        "id": 230,
+        "name": "Calculus I",
+        "number": "MATH 1271"
+      },
+       {
+        "id": 231,
+        "name": "Physics for Science and Engineering II",
+        "number": "PHYS 1302W"
+      },
+       {
+        "id": 232,
+        "name": "Physics for Science and Engineering I",
+        "number": "PHYS 1301W"
+      },
+       {
+        "id": 233,
+        "name": "Monsters, Robots, Cyborgs",
+        "number": "CSCL 3461"
+      },
+       {
+        "id": 234,
+        "name": "Mass Media and Popular Culture",
+        "number": "JOUR 3745"
+      },
+       {
+        "id": 235,
+        "name": "University Writing",
+        "number": "WRIT1301"
+      },
+       {
+        "id": 236,
+        "name": "Introductory Biology: Evolution & Ecology",
+        "number": "BIOL 1001"
+      },
+       {
+        "id": 237,
+        "name": "American Government & Politics",
+        "number": "POL 1001"
+      },
+       {
+        "id": 238,
+        "name": "Global Politics",
+        "number": "POL 1025"
+      },
+       {
+        "id": 239,
+        "name": "Issues in the Environment",
+        "number": "ESPM 1011"
+      },
+       {
+        "id": 240,
+        "name": "AP United States History",
+        "number": "HIST 1999"
+      }
+    ]
+  },
+  "educations":  {
+    "_total": 1,
+    "values":  [
+       {
+        "activities": "UMN Association for Computing Machinery (ACM), The Minnesota Daily, UMN Consulting Club (UCC)",
+        "degree": "B.S.",
+        "endDate":  {
+          "year": 2013
+        },
+        "fieldOfStudy": "Computer Science",
+        "grade":  {},
+        "id": 42335170,
+        "notes": "Upper Division Track: Software and Data Systems Development",
+        "schoolName": "University of Minnesota-Twin Cities",
+        "startDate":  {
+          "year": 2009
+        }
+      }
+    ]
+  },
+  "formattedName": "Anders Johnson",
+  "headline": "Senior Programmer Analyst & Web Developer at Jostens",
+  "honorsAwards":  {
+    "_total": 8,
+    "values":  [
+       {
+        "id": 253,
+        "issuer": "University of Minnesota",
+        "name": "Dean's List"
+      },
+       {
+        "id": 249,
+        "issuer": "University of Minnesota Association for Computing Machinery (UMN ACM)",
+        "name": "2nd place, \"Rise Above the Monkey\" Software Design Competition"
+      },
+       {
+        "id": 510942745,
+        "issuer": "Jostens",
+        "name": "Leader Award"
+      },
+       {
+        "id": 1915771936,
+        "issuer": "Jostens Manager",
+        "name": "You Lead The Way"
+      },
+       {
+        "id": 1602937825,
+        "issuer": "Jostens Manager",
+        "name": "You Lead The Way"
+      },
+       {
+        "id": 510942746,
+        "issuer": "Jostens Human Resources",
+        "name": "You Lead The Way"
+      },
+       {
+        "id": 510942747,
+        "issuer": "Jostens Human Resources",
+        "name": "You Lead The Way"
+      },
+       {
+        "id": 1916012882,
+        "issuer": "Jostens",
+        "name": "1-Year Recognition"
+      }
+    ]
+  },
+  "location":  {
+    "country":  {
+      "code": "us"
+    },
+    "name": "Greater Minneapolis-St. Paul Area"
+  },
+  "positions":  {
+    "_total": 6,
+    "values":  [
+       {
+        "company":  {
+          "id": 7197,
+          "industry": "Consumer Goods",
+          "name": "Jostens",
+          "size": "1001-5000",
+          "type": "Privately Held"
+        },
+        "id": 510942742,
+        "isCurrent": true,
+        "location":  {
+          "country":  {
+            "code": "us",
+            "name": "United States"
+          },
+          "name": "Greater Minneapolis-St. Paul Area"
+        },
+        "startDate":  {
+          "month": 6,
+          "year": 2013
+        },
+        "summary": "Full stack web developer on the enterprise e-commerce team.\n\nPromotions\n- From Programmer Analyst & Web Developer - February 2016.\n- From Associate Programmer Analyst & Web Developer - January 2014.\n\nWork\n- Develop new single-page web app with AngularJS and Bootstrap 3 using a REST API backed by LAMP stack, deployed via AWS OpsWorks on the Amazon cloud: SchoolWay https://webapp.myschoolway.com/\n- New responsive design landing pages with Bootstrap 3 via Rhytymyx CMS to re-energize brand. New responsive design e-commerce web experience, including product configurators - Bootstrap, Backbone.js, etc. with legacy IE8 support - mobile sales increased from ~5% to 20+%.\n- Web developer on new point of sale (POS) iOS hybrid app for sales reps on iPads. New JSON API web services backed by Java, Spring MVC, MyBatis, and Oracle PL/SQL, and lead the effort to utilize native/web app integration to share existing SPA web code to reduce costs and accelerate project timeline.\n- Develop tooling for management of images using Groovy and ImageMagick.\n- Maintenance on Flash/Flex/AIR Jewelry designer web apps and designed product image rendering services.\n- Integrate website with Salesforce Live Agent customer service chat solution.\n- Full-stack production support.\n\nTechnologies: JavaScript, Backbone.js, jQuery, Grunt, Bootstrap, CSS, HTML, Java, Ant, Maven, Groovy, Tomcat, Spring MVC, Oracle PL/SQL, MS SQL Server, Solr, JUnit, Spock, Geb, Bash, Batch scripting, hybrid web/native mobile apps, AngularJS, REST APIs, PHP, Apache, LAMP, Flash/ActionScript/Flex/AIR/SWF/Animate, Classic ASP/VBScript, Node.js, XML, JSON, SOAP, JAXB, JiBX, Hudson/Jenkins, Splunk, AppDynamics, JIRA, JSPWiki, Subversion, WebSVN, Eclipse, IntelliJ IDEA, etc.",
+        "title": "Senior Programmer Analyst & Web Developer"
+      },
+       {
+        "company":  {
+          "id": 166130,
+          "industry": "Media Production",
+          "name": "Star Tribune",
+          "size": "1001-5000",
+          "type": "Privately Held"
+        },
+        "endDate":  {
+          "month": 1,
+          "year": 2013
+        },
+        "id": 281697846,
+        "isCurrent": false,
+        "location":  {
+          "country":  {
+            "code": "us",
+            "name": "United States"
+          },
+          "name": "Greater Minneapolis-St. Paul Area"
+        },
+        "startDate":  {
+          "month": 6,
+          "year": 2012
+        },
+        "summary": "One of two web development interns on the Digital Technology team at the largest daily paper in Minnesota.\n\nMobile apps\n - Primary developer for pre-release version of Star Tribune Going Out app (http://www.startribune.com/help/217138611.html).\n - R&D in the mobile app space. Cutting edge technologies: Appcelerator Titanium, PhoneGap/Cordova, Sencha Touch, jQuery Mobile, Backbone.js, Android, Java, iOS, etc.\n - Integrated with Apache SOLR database backend.\n\nAudited site performance & developed analytic tools\n - Discovered per-domain bottlenecks. Identified expensive requests, like advertisements from indirect clients. Findings used to kick-start projects to improve performance.\n\nWeb application migration\n - Contributed to project migrating applications on internal server cluster to Joyent cloud. Updated legacy code from PHP 4 to PHP 5.\n\nLearned about Limelight CMS / CDN, Java Velocity, etc.",
+        "title": "Web Development Intern"
+      },
+       {
+        "company":  {
+          "name": "Freelance"
+        },
+        "endDate":  {
+          "month": 1,
+          "year": 2013
+        },
+        "id": 283734481,
+        "isCurrent": false,
+        "location":  {
+          "country":  {
+            "code": "us",
+            "name": "United States"
+          },
+          "name": "Greater Minneapolis-St. Paul Area"
+        },
+        "startDate":  {
+          "month": 1,
+          "year": 2008
+        },
+        "summary": "- Personal website, http://andrz.me\n- UMN Consulting Club, http://umnconsulting.com/\n-- As a club leader, redesigned and re-implemented website using Drupal 7.\n- Latino Economic Development Center, www.ledc-mn.org\n-- Volunteered to rebuild previously static website, integrating Adobe Contribute for maintainability.",
+        "title": "Web Developer & Designer"
+      },
+       {
+        "company":  {
+          "id": 19397,
+          "industry": "Newspapers",
+          "name": "The Minnesota Daily",
+          "size": "51-200",
+          "type": "Non Profit"
+        },
+        "endDate":  {
+          "month": 8,
+          "year": 2012
+        },
+        "id": 240152800,
+        "isCurrent": false,
+        "location":  {
+          "country":  {
+            "code": "us",
+            "name": "United States"
+          },
+          "name": "Greater Minneapolis-St. Paul Area"
+        },
+        "startDate":  {
+          "month": 4,
+          "year": 2011
+        },
+        "summary": "- Lead developer on web development team for the 3rd largest newspaper in the Twin Cities.\n- Maintain & improve http://mndaily.com and internal systems:\n-- Drupal, LAMP (Linux, Apache, MySQL, PHP), Subversion (SVN), Windows Server, Active Directory\n- Develop & launch cross-platform embedded HTML5 mobile app:\n-- PhoneGap & Sencha Touch\n- Redesign of http://mndaily.com\n-- Responsive design, introduce SASS CSS preprocessor, cleaner code architecture, upgrade Drupal modules, new advertisement spots\n- Performance enhancements\n-- Drupal caching, APC for PHP, MySQL optimization\n- Improve workflow by introducing project management, bug tracker, and documentation tools\n-- MediaWiki, DokuWiki, Mantis Bug Tracker (MantisBT), WebSVN\n- Coordinate across organization for project planning & process review.",
+        "title": "Webmaster & Online Manager"
+      },
+       {
+        "company":  {
+          "id": 3181,
+          "industry": "Higher Education",
+          "name": "University of Minnesota",
+          "size": "10001+",
+          "type": "Educational"
+        },
+        "endDate":  {
+          "month": 4,
+          "year": 2012
+        },
+        "id": 240153280,
+        "isCurrent": false,
+        "location":  {
+          "country":  {
+            "code": "us",
+            "name": "United States"
+          },
+          "name": "Greater Minneapolis-St. Paul Area"
+        },
+        "startDate":  {
+          "month": 5,
+          "year": 2011
+        },
+        "summary": "Website maintenance and web design position for CLA Communications department (CLA Career Serivces, Community Service-Learning Center, and Off-Campus Study Programs).\n\nResponsibilities include:\n- Maintain existing web sites\n- Work with web content-management system\n- Trouble-shooting web technology problems\n- Proof-reading content\n- Editing & uploading photos\n- Managing electronic mailing lists\n- Authoring of instructional documentation of web tasks\n- Miscellaneous communications and administrative tasks",
+        "title": "Web & Communications Assistant"
+      },
+       {
+        "company":  {
+          "id": 679550,
+          "industry": "Nonprofit Organization Management",
+          "name": "LEDC",
+          "size": "2-10",
+          "type": "Non Profit"
+        },
+        "endDate":  {
+          "year": 2012
+        },
+        "id": 732888873,
+        "isCurrent": false,
+        "location":  {},
+        "startDate":  {
+          "year": 2011
+        },
+        "title": "Web Developer"
+      }
+    ]
+  },
+  "recommendationsReceived":  {
+    "_total": 4,
+    "values":  [
+       {
+        "id": 36537584,
+        "recommendationText": "Over the past year and a half Anders has proved himself to be an excellent programmer and invaluable asset to the Minnesota Daily. \r\n\r\nIn the nine months he worked as the Daily's webmaster, he quickly mastered the Daily's web systems and helped launch the Daily's iPhone and Android phone apps. \r\n\r\nAs the Online manager, Anders has been responsible for the web presence of the third largest newspaper in the Twin Cities. He oversaw the development and launch of a new, responsive design website as well as proved himself a capable manager and an excellent communicator, especially when called upon to explain technical jargon to non-tech staff. \r\n\r\nI highly recommend Anders and would hire him again if given the chance.",
+        "recommendationType":  {
+          "code": "colleague"
+        },
+        "recommender":  {
+          "firstName": "Jacob",
+          "id": "YqaAuHFMVw",
+          "lastName": "Piekarski"
+        }
+      },
+       {
+        "id": 40490872,
+        "recommendationText": "Anders was extremely good at his Web and Communications position at the U of M. He is exceptionally talented at web development, with vast and impressive skills in this area. He's also a strong verbal and written communicator, strategic, well organized, a quick study, and self-motivated. On a more personal note, Anders is also a pleasure to collaborate with. I'd very happily hire or work with Anders again.",
+        "recommendationType":  {
+          "code": "colleague"
+        },
+        "recommender":  {
+          "firstName": "private",
+          "id": "private",
+          "lastName": "private"
+        }
+      },
+       {
+        "id": 43290333,
+        "recommendationText": "Anders joined our team as one of two interns for our initial internship program. As an intern on our team, Anders was crucial in establishing the program, working to prototype experimental technologies and working with our development team to augment our staffing resources on our core product line. I found Anders to be an incredibly fast study, a great team player and an asset to our team. Because of his successful internship and the value he provided, the internship program went from a temporary test into a year-round part of our core development team. I'll definitely be calling Anders in the future with any opportunities that we may have available on our team.",
+        "recommendationType":  {
+          "code": "colleague"
+        },
+        "recommender":  {
+          "firstName": "Chad",
+          "id": "_im8MhKGtx",
+          "lastName": "Wagner"
+        }
+      },
+       {
+        "id": 577002094,
+        "recommendationText": "Anders is a phenomenal developer who has the ability to quickly apply technology to solve business problems.\r\n\r\nI hired Anders as a Web Developer for our E-Commerce development team. He quickly came up to speed on both technology and business knowledge. Anders has an ability to balance the technology, feasibility, and timing to come up with the right fit solution for the business problem. By collaborating with the E-Commerce team and the business, he proved he has the capabilities and became a go to resource.\r\n\r\nI enjoyed working with Anders and value the experience I gained by having him on my team. If you are looking for a \"Rock Star\" developer and a great person, Anders is your guy. ",
+        "recommendationType":  {
+          "code": "colleague"
+        },
+        "recommender":  {
+          "firstName": "Shawn",
+          "id": "8ruj2txuJ_",
+          "lastName": "Wood"
+        }
+      }
+    ]
+  },
+  "skills":  {
+    "_total": 50,
+    "values":  [
+       {
+        "id": 50,
+        "skill":  {
+          "name": "Web Development"
+        }
+      },
+       {
+        "id": 51,
+        "skill":  {
+          "name": "JavaScript"
+        }
+      },
+       {
+        "id": 52,
+        "skill":  {
+          "name": "jQuery"
+        }
+      },
+       {
+        "id": 53,
+        "skill":  {
+          "name": "CSS"
+        }
+      },
+       {
+        "id": 54,
+        "skill":  {
+          "name": "PHP"
+        }
+      },
+       {
+        "id": 55,
+        "skill":  {
+          "name": "HTML"
+        }
+      },
+       {
+        "id": 56,
+        "skill":  {
+          "name": "HTML 5"
+        }
+      },
+       {
+        "id": 57,
+        "skill":  {
+          "name": "Web Applications"
+        }
+      },
+       {
+        "id": 58,
+        "skill":  {
+          "name": "Java"
+        }
+      },
+       {
+        "id": 59,
+        "skill":  {
+          "name": "MySQL"
+        }
+      },
+       {
+        "id": 60,
+        "skill":  {
+          "name": "Drupal"
+        }
+      },
+       {
+        "id": 61,
+        "skill":  {
+          "name": "Software Development"
+        }
+      },
+       {
+        "id": 62,
+        "skill":  {
+          "name": "HTML5"
+        }
+      },
+       {
+        "id": 63,
+        "skill":  {
+          "name": "CMS"
+        }
+      },
+       {
+        "id": 64,
+        "skill":  {
+          "name": "Computer Science"
+        }
+      },
+       {
+        "id": 65,
+        "skill":  {
+          "name": "SEO"
+        }
+      },
+       {
+        "id": 66,
+        "skill":  {
+          "name": "Social Media"
+        }
+      },
+       {
+        "id": 67,
+        "skill":  {
+          "name": "User Experience"
+        }
+      },
+       {
+        "id": 68,
+        "skill":  {
+          "name": "Subversion"
+        }
+      },
+       {
+        "id": 69,
+        "skill":  {
+          "name": "MVC"
+        }
+      },
+       {
+        "id": 70,
+        "skill":  {
+          "name": "Apache"
+        }
+      },
+       {
+        "id": 71,
+        "skill":  {
+          "name": "Linux"
+        }
+      },
+       {
+        "id": 72,
+        "skill":  {
+          "name": "Web Design"
+        }
+      },
+       {
+        "id": 73,
+        "skill":  {
+          "name": "API Development"
+        }
+      },
+       {
+        "id": 74,
+        "skill":  {
+          "name": "SOA"
+        }
+      },
+       {
+        "id": 75,
+        "skill":  {
+          "name": "Groovy"
+        }
+      },
+       {
+        "id": 76,
+        "skill":  {
+          "name": "Grails"
+        }
+      },
+       {
+        "id": 77,
+        "skill":  {
+          "name": "Node.js"
+        }
+      },
+       {
+        "id": 78,
+        "skill":  {
+          "name": "Project Management"
+        }
+      },
+       {
+        "id": 79,
+        "skill":  {
+          "name": "Wordpress"
+        }
+      },
+       {
+        "id": 80,
+        "skill":  {
+          "name": "SQL"
+        }
+      },
+       {
+        "id": 81,
+        "skill":  {
+          "name": "AJAX"
+        }
+      },
+       {
+        "id": 82,
+        "skill":  {
+          "name": "LAMP"
+        }
+      },
+       {
+        "id": 83,
+        "skill":  {
+          "name": "Github"
+        }
+      },
+       {
+        "id": 84,
+        "skill":  {
+          "name": "REST"
+        }
+      },
+       {
+        "id": 85,
+        "skill":  {
+          "name": "Shell Scripting"
+        }
+      },
+       {
+        "id": 86,
+        "skill":  {
+          "name": "Git"
+        }
+      },
+       {
+        "id": 87,
+        "skill":  {
+          "name": "Windows"
+        }
+      },
+       {
+        "id": 88,
+        "skill":  {
+          "name": "Mobile Web"
+        }
+      },
+       {
+        "id": 89,
+        "skill":  {
+          "name": "PhoneGap"
+        }
+      },
+       {
+        "id": 90,
+        "skill":  {
+          "name": "Cordova"
+        }
+      },
+       {
+        "id": 91,
+        "skill":  {
+          "name": "Sencha Touch"
+        }
+      },
+       {
+        "id": 92,
+        "skill":  {
+          "name": "jQuery Mobile"
+        }
+      },
+       {
+        "id": 93,
+        "skill":  {
+          "name": "Backbone.js"
+        }
+      },
+       {
+        "id": 94,
+        "skill":  {
+          "name": "Web Analytics"
+        }
+      },
+       {
+        "id": 95,
+        "skill":  {
+          "name": "UI"
+        }
+      },
+       {
+        "id": 96,
+        "skill":  {
+          "name": "Enterprise Architecture"
+        }
+      },
+       {
+        "id": 97,
+        "skill":  {
+          "name": "Web Application Design"
+        }
+      },
+       {
+        "id": 98,
+        "skill":  {
+          "name": "Responsive Web Design"
+        }
+      },
+       {
+        "id": 1916012883,
+        "skill":  {
+          "name": "Performance Tuning"
+        }
+      }
+    ]
+  },
+  "summary": "Full-stack web developer & software engineer with 5+ years of experience in web technologies and e-commerce. Passion for modern front end. Open-source contributor & creator. Some DevOps, UI/UX, PM & QA.\n\nTech: JavaScript, HTML5, CSS3, jQuery, Angular, React, Backbone, Bootstrap, PhoneGap/Cordova, Node.js, MEAN, Java, Spring, Groovy, SQL, PHP, Drupal, Linux, LAMP, etc.\n\n* https://andrz.me\n* https://github.com/AndersDJohnson\n* https://twitter.com/AndersDJohnson\n\nStrengthsFinder: Learner, Strategic, Analytical, Relator, Responsibility\n\nMyers-Briggs: INTJ/INTP (Architect/Thinker/Logician)"
+}
