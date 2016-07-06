@@ -83,7 +83,7 @@ export default class Resume extends React.Component {
               })}
             </ul>
 
-            <h2>Profile</h2>
+            {/*<h2>Profile</h2>*/}
 
             <Markdown source={summary} />
 
