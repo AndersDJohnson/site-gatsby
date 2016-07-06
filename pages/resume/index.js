@@ -92,12 +92,14 @@ export default class Resume extends React.Component {
             {positions.map(position => {
               return (
                 <div>
-                  <h3>{position.title}</h3>
-                  <div className="adj-resume-company-name">{position.company.name}</div>
-                  <div>
-                    {this.renderDate(position.startDate)}
-                    {' '}&ndash;{' '}
-                    {position.isCurrent ? 'Present' : this.renderDate(position.endDate)}
+                  <div className="clearfix">
+                    <h3>{position.title}</h3>
+                    <div className="adj-resume-company-name">{position.company.name}</div>
+                    <div className="pull-right">
+                      {this.renderDate(position.startDate)}
+                      {' '}&ndash;{' '}
+                      {position.isCurrent ? 'Present' : this.renderDate(position.endDate)}
+                    </div>
                   </div>
 
                   <Markdown source={position.summary} />
