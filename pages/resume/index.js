@@ -76,7 +76,7 @@ export default class Resume extends React.Component {
 
           <ul>
             {toc.map(t => {
-              return <li>
+              return <li key={t.name}>
                 <Link to={prefixLink(`/resume/#${t.hash}`)}>{t.name}</Link>
               </li>
             })}
@@ -91,16 +91,15 @@ export default class Resume extends React.Component {
 
             {positions.map(position => {
               return (
-                <div>
-                  <div className="clearfix">
-                    <h3>{position.title}</h3>
-                    <div className="adj-resume-company-name">{position.company.name}</div>
-                    <div className="pull-right">
-                      {this.renderDate(position.startDate)}
-                      {' '}&ndash;{' '}
-                      {position.isCurrent ? 'Present' : this.renderDate(position.endDate)}
-                    </div>
-                  </div>
+                <div key={position.id}>
+                  <h3>{position.title}</h3>
+                  <h4 className="adj-resume-company-name adj-no-anchor">
+                    {position.company.name},
+                    {' '}
+                    {this.renderDate(position.startDate)}
+                    {' '}&ndash;{' '}
+                    {position.isCurrent ? 'Present' : this.renderDate(position.endDate)}
+                  </h4>
 
                   <Markdown source={position.summary} />
                 </div>
@@ -113,7 +112,7 @@ export default class Resume extends React.Component {
 
             {educations.map(education => {
               return (
-                <div>
+                <div key={education.id}>
                   <h3>{education.fieldOfStudy}, {education.degree}</h3>
                   <div>{education.schoolName}</div>
                   <div>
@@ -131,7 +130,7 @@ export default class Resume extends React.Component {
             <ul className="adj-resume-courses-list">
               {courses.map(course => {
                 return (
-                  <li>
+                  <li key={course.number}>
                     <b>{course.number}</b>: {course.name}
                   </li>
                 )
@@ -146,7 +145,7 @@ export default class Resume extends React.Component {
               {honors.map(honor => {
                 const details = honorsAwardsDetails[honor.id] || {}
                 return (
-                  <li>
+                  <li key={honor.id}>
                     <b>{honor.name}</b>:
                     {' '}
                     {honor.issuer},
@@ -165,7 +164,7 @@ export default class Resume extends React.Component {
             <ul className="adj-resume-tests-list">
               {tests.map(test => {
                 return (
-                  <li>
+                  <li key={test.name}>
                     <b>{test.name}</b>: {test.score} ({test.percentile} %ile)
                   </li>
                 )
