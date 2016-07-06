@@ -73,105 +73,108 @@ export default class Resume extends React.Component {
         </h1>
 
         <div className="adj-page">
+          <div className="container">
 
-          <ul>
-            {toc.map(t => {
-              return <li key={t.name}>
-                <Link to={prefixLink(`/resume/#${t.hash}`)}>{t.name}</Link>
-              </li>
-            })}
-          </ul>
+            <ul>
+              {toc.map(t => {
+                return <li key={t.name}>
+                  <Link to={prefixLink(`/resume/#${t.hash}`)}>{t.name}</Link>
+                </li>
+              })}
+            </ul>
 
-          <h2>Profile</h2>
+            <h2>Profile</h2>
 
-          <Markdown source={summary} />
+            <Markdown source={summary} />
 
-          <div class="adj-resume-section">
-            <h2>Experience</h2>
+            <div class="adj-resume-section">
+              <h2>Experience</h2>
 
-            {positions.map(position => {
-              return (
-                <div key={position.id}>
-                  <h3>{position.title}</h3>
-                  <h4 className="adj-resume-company-name adj-no-anchor">
-                    {position.company.name},
-                    {' '}
-                    {this.renderDate(position.startDate)}
-                    {' '}&ndash;{' '}
-                    {position.isCurrent ? 'Present' : this.renderDate(position.endDate)}
-                  </h4>
+              {positions.map(position => {
+                return (
+                  <div key={position.id}>
+                    <h3>{position.title}</h3>
+                    <h4 className="adj-resume-employment-name adj-no-anchor">
+                      {position.company.name}
+                    </h4>
+                    <h5 className="adj-resume-employment-date adj-no-anchor">
+                      {this.renderDate(position.startDate)}
+                      {' '}&ndash;{' '}
+                      {position.isCurrent ? 'Present' : this.renderDate(position.endDate)}
+                    </h5>
 
-                  <Markdown source={position.summary} />
-                </div>
-              )
-            })}
-          </div>
-
-          <div class="adj-resume-section">
-            <h2>Education</h2>
-
-            {educations.map(education => {
-              return (
-                <div key={education.id}>
-                  <h3>{education.fieldOfStudy}, {education.degree}</h3>
-                  <div>{education.schoolName}</div>
-                  <div>
-                    {this.renderDate(education.startDate)}
-                    {' '}&ndash;{' '}
-                    {education.isCurrent ? 'Present' : this.renderDate(education.endDate)}
+                    <Markdown source={position.summary} />
                   </div>
-
-                  <Markdown source={education.notes} />
-                  <Markdown source={education.activities} />
-                </div>
-              )
-            })}
-
-            <ul className="adj-resume-courses-list">
-              {courses.map(course => {
-                return (
-                  <li key={course.number}>
-                    <b>{course.number}</b>: {course.name}
-                  </li>
                 )
               })}
-            </ul>
-          </div>
+            </div>
 
-          <div class="adj-resume-section">
-            <h2>Honors</h2>
+            <div class="adj-resume-section">
+              <h2>Education</h2>
 
-            <ul className="adj-resume-honors-list">
-              {honors.map(honor => {
-                const details = honorsAwardsDetails[honor.id] || {}
+              {educations.map(education => {
                 return (
-                  <li key={honor.id}>
-                    <b>{honor.name}</b>:
-                    {' '}
-                    {honor.issuer},
-                    {' '}
-                    {details.date ? this.renderDate(details.date) : ''}
-                    {details.description ? <Markdown source={details.description} /> : ''}
-                  </li>
+                  <div key={education.id}>
+                    <h3>{education.fieldOfStudy}, {education.degree}</h3>
+                    <div>{education.schoolName}</div>
+                    <div>
+                      {this.renderDate(education.startDate)}
+                      {' '}&ndash;{' '}
+                      {education.isCurrent ? 'Present' : this.renderDate(education.endDate)}
+                    </div>
+
+                    <Markdown source={education.notes} />
+                    <Markdown source={education.activities} />
+                  </div>
                 )
               })}
-            </ul>
+
+              <ul className="adj-resume-courses-list">
+                {courses.map(course => {
+                  return (
+                    <li key={course.number}>
+                      <b>{course.number}</b>: {course.name}
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+
+            <div class="adj-resume-section">
+              <h2>Honors</h2>
+
+              <ul className="adj-resume-honors-list">
+                {honors.map(honor => {
+                  const details = honorsAwardsDetails[honor.id] || {}
+                  return (
+                    <li key={honor.id}>
+                      <b>{honor.name}</b>:
+                      {' '}
+                      {honor.issuer},
+                      {' '}
+                      {details.date ? this.renderDate(details.date) : ''}
+                      {details.description ? <Markdown source={details.description} /> : ''}
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+
+            <div class="adj-resume-section">
+              <h2>Tests</h2>
+
+              <ul className="adj-resume-tests-list">
+                {tests.map(test => {
+                  return (
+                    <li key={test.name}>
+                      <b>{test.name}</b>: {test.score} ({test.percentile} %ile)
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+
           </div>
-
-          <div class="adj-resume-section">
-            <h2>Tests</h2>
-
-            <ul className="adj-resume-tests-list">
-              {tests.map(test => {
-                return (
-                  <li key={test.name}>
-                    <b>{test.name}</b>: {test.score} ({test.percentile} %ile)
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
-
         </div>
       </div>
     )
