@@ -83,7 +83,10 @@ export default class Resume extends React.Component {
               })}
             </ul>
 
-            {/*<h2>Profile</h2>*/}
+            <h1>Anders D. Johnson <small>Software developer & web enthusiast</small></h1>
+            {resume.location.city}, {resume.location.state}, {resume.location.country}
+
+            <h2>Profile</h2>
 
             <Markdown source={summary} />
 
@@ -93,15 +96,23 @@ export default class Resume extends React.Component {
               {positions.map(position => {
                 return (
                   <div key={position.id}>
-                    <h3>{position.title}</h3>
-                    <h4 className="adj-resume-employment-name adj-no-anchor">
+                    <h3>
+                      {position.title} @ {position.company.name}
+                      {' '}
+                      <small>
+                        {this.renderDate(position.startDate)}
+                        {' '}&ndash;{' '}
+                        {position.isCurrent ? 'Present' : this.renderDate(position.endDate)}
+                      </small>
+                    </h3>
+                    {/*<h4 className="adj-resume-employment-name adj-no-anchor">
                       {position.company.name}
-                    </h4>
-                    <h5 className="adj-resume-employment-date adj-no-anchor">
+                    </h4>*/}
+                    {/*<h5 className="adj-resume-employment-date adj-no-anchor">
                       {this.renderDate(position.startDate)}
                       {' '}&ndash;{' '}
                       {position.isCurrent ? 'Present' : this.renderDate(position.endDate)}
-                    </h5>
+                    </h5>*/}
 
                     <Markdown source={position.summary} />
                   </div>

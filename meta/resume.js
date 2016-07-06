@@ -1,5 +1,11 @@
 import stripIndent from 'strip-indent'
 
+export const location = {
+  city: 'Minneapolis',
+  state: 'MN',
+  country: 'USA',
+}
+
 export const tests = [
   {
     name: 'ACT',
