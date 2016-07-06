@@ -83,7 +83,11 @@ export default class Resume extends React.Component {
               })}
             </ul>
 
-            <h1>Anders D. Johnson <small>Software developer & web enthusiast</small></h1>
+            <h1 className="adj-no-anchor">
+              Anders D. Johnson
+              {' '}
+              <small>Software developer & web enthusiast</small>
+            </h1>
             {resume.location.city}, {resume.location.state}, {resume.location.country}
 
             <h2>Profile</h2>
