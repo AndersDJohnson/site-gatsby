@@ -22,7 +22,7 @@ export default class Resume extends React.Component {
     const els = [
       'h1:not(.adj-page-heading)', 'h2', 'h3', 'h4', 'h5', 'h6'
     ]
-    const classes = els.map(el => '.adj-page-resume ' + el).join(',')
+    const classes = els.map(el => '.adj-page-resume ' + el + ':not(.adj-no-anchor)').join(',')
     anchors.add(classes)
   }
 
