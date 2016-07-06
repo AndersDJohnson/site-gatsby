@@ -1,11 +1,10 @@
 import React from 'react'
 import moment from 'moment'
-import Markdown from 'react-remarkable'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
-import ReactMarkdown from 'react-markdown'
 import stripIndent from 'strip-indent'
 import { Icon } from 'react-fa'
+import Markdown from '../../components/Markdown'
 import { linksById } from '../../meta/nav'
 import AnchorJS from 'anchor-js'
 import linkedinProfile from '../../meta/linkedinProfile.json'
@@ -85,7 +84,7 @@ export default class Resume extends React.Component {
 
           <h2>Profile</h2>
 
-          <ReactMarkdown source={summary} />
+          <Markdown source={summary} />
 
           <div class="adj-resume-section">
             <h2>Experience</h2>
@@ -101,7 +100,7 @@ export default class Resume extends React.Component {
                     {position.isCurrent ? 'Present' : this.renderDate(position.endDate)}
                   </div>
 
-                  <ReactMarkdown source={position.summary} />
+                  <Markdown source={position.summary} />
                 </div>
               )
             })}
@@ -121,8 +120,8 @@ export default class Resume extends React.Component {
                     {education.isCurrent ? 'Present' : this.renderDate(education.endDate)}
                   </div>
 
-                  <ReactMarkdown source={education.notes} />
-                  <ReactMarkdown source={education.activities} />
+                  <Markdown source={education.notes} />
+                  <Markdown source={education.activities} />
                 </div>
               )
             })}
@@ -151,7 +150,7 @@ export default class Resume extends React.Component {
                     {honor.issuer},
                     {' '}
                     {details.date ? this.renderDate(details.date) : ''}
-                    {details.description ? <ReactMarkdown source={details.description} /> : ''}
+                    {details.description ? <Markdown source={details.description} /> : ''}
                   </li>
                 )
               })}
