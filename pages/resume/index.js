@@ -67,7 +67,7 @@ export default class Resume extends React.Component {
       <div className="adj-page-resume">
         <h1 className="adj-page-heading">
           <Link to="/resume/">
-            <Icon name={linksById.resume.icon} className="adj-menu-item-icon" />
+            <Icon name={linksById.resume.icon} fixedWidth className="adj-menu-item-icon" />
             {linksById.resume.name}
           </Link>
         </h1>

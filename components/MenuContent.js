@@ -13,7 +13,7 @@ export default class MenuContent extends React.Component {
             {links.map(link =>
               <li key={link.url} className="adj-menu-item">
                 <Link to={prefixLink(link.url)} className="adj-menu-item-link adj-link-unstyled" onClick={this.props.onLinkClick}>
-                  <Icon name={link.icon}  className="adj-menu-item-icon" />
+                  <Icon name={link.icon} fixedWidth className="adj-menu-item-icon" />
                   {link.name}
                 </Link>
               </li>
@@ -24,7 +24,7 @@ export default class MenuContent extends React.Component {
             {externalLinks.map(link =>
               <li key={link.url} className="adj-menu-item">
                 <Link to={link.url} className="adj-menu-item-link adj-link-unstyled" target="_blank">
-                  <Icon name={link.icon} className="adj-menu-item-icon" />
+                  <Icon name={link.icon} fixedWidth className="adj-menu-item-icon" />
                   {link.name}
                 </Link>
               </li>

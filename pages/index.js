@@ -25,11 +25,11 @@ export default class Index extends React.Component {
 
           <nav>
             <Link to={prefixLink(linksById.resume.url)} className="adj-btn adj-btn-lg adj-btn-home">
-              <Icon name={linksById.resume.icon} /> {linksById.resume.name}
+              <Icon name={linksById.resume.icon} fixedWidth /> {linksById.resume.name}
             </Link>
 
             <Link to={prefixLink(linksById.work.url)} className="adj-btn adj-btn-lg adj-btn-home">
-              <Icon name={linksById.work.icon} /> {linksById.work.name}
+              <Icon name={linksById.work.icon} fixedWidth /> {linksById.work.name}
             </Link>
 
             {/*<Link to={prefixLink('/blog/')} className="adj-btn adj-btn-lg adj-btn-home">
